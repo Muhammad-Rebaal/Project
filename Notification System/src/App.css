@@ -1,0 +1,207 @@
+/* App.css */
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* .app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} */
+
+/* Navbar Styling */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 25px;
+  margin: 0;
+}
+
+/* Content Area Styling */
+.content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* LocationPicker and NotificationSettings will inherit their styles from content's flex settings */
+
+/* Notification History Styling */
+.notification-history {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  max-width: 300px;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  z-index: 1000;
+}
+
+.notification-history ul {
+  list-style-type: none;
+  padding: 5;
+}
+
+.notification-history li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Notification Icon Styling (previously added) */
+.notification-icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 25px;
+}
+
+.notification-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2em 0.5em;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 12px;
+}
+
+
+/* NotificationSettings component */
+.notification-settings {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.notification-settings h3 {
+  margin-bottom: 10px;
+}
+
+.date-time-picker {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-time-picker label {
+  margin: 10px;
+}
+
+.date-time-picker input {
+  margin-bottom: 30px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* .setNotification{
+width: 50;
+height: 100
+
+} */
+
+
+/* General container styling */
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the location picker and date/time input fields */
+.location-picker, .date-time-picker {
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-picker label,
+.date-time-picker label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.location-picker input,
+.date-time-picker input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.setNotification {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.setNotification:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the satellite distance display */
+.satellite-info {
+  margin-top: 20px;
+}
+
+.satellite-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.satellite-info p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Satellite data section */
+.satellite-data {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.satellite-data h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.satellite-data p {
+  font-size: 16px;
+}
+
+.satellite-data button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.satellite-data button:hover {
+  background-color: #218838;
+}
